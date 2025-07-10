@@ -10,10 +10,22 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 
 ##### 创建/打开项目
 
+<<<<<<< Updated upstream
+=======
+1. 在文件菜单中点击新建，可以选择项目、文件、库等。
+2. 同样在文件菜单中选择点击打开，可以打开存在的项目、文件、库等。
+
+>>>>>>> Stashed changes
 ![](./VisualStudio.assets/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.png)
 
 ##### 加载/卸载项目
 
+<<<<<<< Updated upstream
+=======
+1. 右击需卸载的项目，选择卸载项目即可。
+2. 当需要加载项目时，可以右击项目选择重新加载项目。
+
+>>>>>>> Stashed changes
 ![](./VisualStudio.assets/%E5%8D%B8%E8%BD%BD%E9%A1%B9%E7%9B%AE.png)
 
 - 设置启动项
@@ -29,11 +41,22 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 
 - 在解决方案管理器中**解决方案右击选择添加**——>**现有项目**
 
+<<<<<<< Updated upstream
 ![](./VisualStudio.assets/%E6%B7%BB%E5%8A%A0%E9%A1%B9%E7%9B%AE.png)
 
 ##### 文件相关
 
 - 创建/打开文件：**项目右击添加**——>**新建项**
+=======
+![](./VisualStudio.assets/%E6%B7%BB%E5%8A%A0%E9%A1%B9%E7%9B%AE1.png)
+
+##### 文件相关
+
+- 创建/打开文件：
+  - **项目右击添加**——>**新建项**
+  - **项目右击添加——>现有项**
+
+>>>>>>> Stashed changes
 
 ![](./VisualStudio.assets/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6.png)
 
@@ -46,12 +69,22 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 
 #### 解决方案配置
 
+<<<<<<< Updated upstream
+=======
+Debug：调试版本，包含调试信息，不优化代码，便于调试。
+
+Release：发布版本，启用代码优化，去除调试信息，适合部署。
+
+>>>>>>> Stashed changes
 ![](./VisualStudio.assets/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E9%85%8D%E7%BD%AE.png)
 
 #### 平台配置
 
+<<<<<<< Updated upstream
 ![](./VisualStudio.assets/%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE.png)
 
+=======
+>>>>>>> Stashed changes
 **指项目构建的目标硬件或操作系统环境。**可以设置在不同的操作系统（如 Windows、Linux）或不同的处理器架构（如 x86、x64、ARM）上构建项目。平台定义了构建目标的属性和设置，以确保代码在特定环境中正确运行。
 
 1. x86：32 位 x86 架构
@@ -60,6 +93,7 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 
 3. ARM：ARM 架构，常见于移动设备和嵌入式系统
 
+<<<<<<< Updated upstream
 #### 项目类型配置
 
 右击项目——>选择属性——>配置属性：常规。
@@ -67,19 +101,39 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 - **生成文件、生成exe、生成lib、生成dll、实用工具等（dll和lib一般是用于调用的库或插件等）。**
 - **调试（Debug）**：用于开发和调试阶段，包含调试符号，便于排查问题。
 - **发布（Release）**：用于发布阶段，优化代码以提高性能，去除调试符号。
+=======
+![](./VisualStudio.assets/%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE.png)
+
+
+
+#### 项目类型配置
+
+**右击项目——>选择属性——>配置属性：常规**
+
+- **生成文件、生成exe、生成lib（静态库）、生成dll（动态库）、实用工具等（dll和lib一般是用于调用的库或插件等）。**
+>>>>>>> Stashed changes
 
 ![](./VisualStudio.assets/%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9E%8B.png)
 
 #### 路径配置
 
+<<<<<<< Updated upstream
 -  输出路径配置
 -  头文件路径配置：工程---属性---配置属性---c/c++---常规---附加包含目录：加上头文件存放目录。
 -  源文件路径配置
+=======
+##### **输出路径配置**
+
+指定编译生成的 **可执行文件（.exe）或动态库（.dll/.lib）** 的输出路径，
+
+* 点击项目属性，选择配置属性中的常规选项，即配置**输出目录 (Output Directory)**
+>>>>>>> Stashed changes
 
 ![](./VisualStudio.assets/%E8%B7%AF%E5%BE%84%E6%96%87%E4%BB%B61.png)
 
 ![](./VisualStudio.assets/%E8%B7%AF%E5%BE%84%E6%96%87%E4%BB%B62.png)
 
+<<<<<<< Updated upstream
 ![](./VisualStudio.assets/%E8%B7%AF%E5%BE%84%E6%96%87%E4%BB%B63.png)
 
 - 库文件路径配置
@@ -113,6 +167,58 @@ Visual Studio 是一款功能强大的**集成开发环境(IDE)**，适用于各
 - 安全检查
   - 识别代码中的安全问题，还能提供修复建议，帮助开发者在开发过程中采取措施预防潜在的安全风险。
   - ![](./VisualStudio.assets/%E5%AE%89%E5%85%A8%E6%A3%80%E6%9F%A5.png)
+=======
+##### **头文件路径配置**
+
+指定 **头文件（.h/.hpp）** 的搜索路径，供编译器查找 `#include` 文件。
+
+* 点击项目属性，选择配置属性中的C/C++选项，在常规中选择**附加包含目录**即可
+
+![](./VisualStudio.assets/%E8%B7%AF%E5%BE%84%E6%96%87%E4%BB%B63.png)
+
+##### **源文件路径配置**
+
+点击项目属性，选择配置属性中的VC++目录，配置**源目录**即可。
+
+![](./VisualStudio.assets/%E5%8E%9F%E7%9B%AE%E5%BD%95.png)
+
+##### 库文件路径配置
+
+点击项目属性，选择配置属性中的VC++目录，配置**库目录**即可。
+
+![](./VisualStudio.assets/%E5%BA%93%E7%9B%AE%E5%BD%95.png)
+
+#### 宏定义
+
+点击项目属性，选择配置属性中的C/C++选项，在预处理器中选择预处理器定义。
+
+![](./VisualStudio.assets/%E5%AE%8F%E5%AE%9A%E4%B9%89.png)
+
+#### 运行库配置
+
+1. 在 Visual Studio 中打开要配置的项目。
+
+2. 选择“属性”菜单，并选择“配置属性”>“C/C++”>“代码生成”。
+
+3. 在“运行库”下拉菜单中选择你需要使用的运行库，默认值一般为“多线程调试 DLL (/MDd)”。
+
+   ![](./VisualStudio.assets/%E8%BF%90%E8%A1%8C%E5%BA%93%E9%85%8D%E7%BD%AE.png)
+
+#### 调用库配置
+
+1. 在解决方案管理器下选中**项目名称**，并选择**属性**按钮；随后在**链接器**中的常规属性下配置**附加库目录**，然后将调用库的**include**文件导入进来
+1. 同时在**链接器**的**输入**属性中选择**附加依赖项**，将**lib文件名称**输入其中。
+
+![](./VisualStudio.assets/%E9%99%84%E5%8A%A0%E5%BA%93%E7%9B%AE%E5%BD%95.png)
+
+![](./VisualStudio.assets/%E9%99%84%E5%8A%A0%E4%BE%9D%E8%B5%96%E9%A1%B9.png)
+
+#### 安全检查
+
+- 识别代码中的安全问题，还能提供修复建议，帮助开发者在开发过程中采取措施预防潜在的安全风险。
+
+  ![](./VisualStudio.assets/%E5%AE%89%E5%85%A8%E6%A3%80%E6%9F%A5.png)
+>>>>>>> Stashed changes
 
 ### 工程调试
 

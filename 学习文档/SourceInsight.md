@@ -71,7 +71,11 @@ SourceInsight 是一款功能强大的源代码编辑器和分析工具，主要
 
 **打开方式：View——>Symbol Window**
 
+<<<<<<< Updated upstream
 用于查看我们开启的文件以及文件内所包含的函数。
+=======
+列出当前文件中所有函数、变量、宏，用于快速定位，用于查看我们开启的文件以及文件内所包含的成员函数。
+>>>>>>> Stashed changes
 
 ![](./SourceInsight.assets/symbol%E7%AA%97%E5%8F%A3.png)
 
@@ -79,7 +83,15 @@ SourceInsight 是一款功能强大的源代码编辑器和分析工具，主要
 
 **打开方式：View——>Panels——>Context Window**
 
+<<<<<<< Updated upstream
 用于查看，函数中某个参数与函数的关系。
+=======
+自动关联出函数内容或变量定义，用于查看，函数中某个参数与函数的关系。
+
+双击context window可以跳转至函数或变量定义处
+
+自动显示当前光标所在的那个变量、函数或宏的**定义**
+>>>>>>> Stashed changes
 
 ![](./SourceInsight.assets/contxt%E7%AA%97%E5%8F%A3.png)
 
@@ -87,17 +99,48 @@ SourceInsight 是一款功能强大的源代码编辑器和分析工具，主要
 
 **打开方式：View——>Panels——>Relation Window**
 
+<<<<<<< Updated upstream
 用于查看函数以及参数所定义的位置。
+=======
+分析和显示代码元素（如函数、变量、宏等）之间的**依赖关系**和**调用关系**，当你选中一个函数、变量、宏或其他符号时，**Relation Window** 会显示该符号在项目中的**所有引用位置**（即哪些地方调用了它或被它调用）。
+>>>>>>> Stashed changes
 
 ![](./SourceInsight.assets/relation%E7%AA%97%E5%8F%A3.png)
 
 ### **搜索引用**
 
+<<<<<<< Updated upstream
 常用的一种查找方式是选择**Search/Lookup References**，在弹出的Loopup References窗口进行查找操作。在SearchMethod中有四种可选的查找方式：Simple String、Regular Expression、 KeywordExpression和Look Up Reference。其中SimpleString是最普通的查找方式，可以查找文件中出现的任意字符或字符，甚至可以查找 _upap || u这样的字符串，但是在工程较大时，查找过程会较慢。
 
 #### SearchFiles
 
 在**File Name框**中可以填入文件名或文件夹。注意当要查询的文件夹双包含子文件夹时，可以勾选Options中的IncludeSubdirectiories，实现对各层文件的递归搜索。
+=======
+常用的一种查找方式是选择**Search/Lookup References**，在弹出的Loopup References窗口进行查找操作。在SearchMethod中有四种可选的查找方式：
+
+1. **Simple String（简单字符串匹配）**：可以查找文件中出现的任意字符或字符，甚至可以查找 _upap || u这样的字符串，但是在工程较大时，查找过程会较慢。
+2. **Regular Expression（正则表达式匹配）**：使用正则表达式语法进行复杂模式匹配，支持通配符、分组、量词等高级规则，适合于模糊匹配或模式化搜索。
+3.  **KeywordExpression（关键字表达式匹配）**：介于 Simple String 和 Regular Expression 之间，支持部分通配符（如 * 和 ?），但不支持完整正则语法。
+4. **Look Up Reference（符号引用查找）：**专门用于查找符号（Symbol）的引用关系（如函数调用、变量使用等），而非普通文本。
+
+#### SearchFiles
+
+在**File Name框**中可以填入**文件名或文件夹**。注意当要查询的文件夹双包含子文件夹时，可以勾选Options中的**IncludeSubdirectiories**，实现对各层文件的**递归搜索**。
+
+~~~
+Project Wide（全工程搜索）
+Include Subdirectories（包含子目录）
+Case Sensitive（大小写敏感）
+Use Regular Expressions（使用正则表达式）
+Find Non-Matching（查找不匹配的内容）
+Whole Words Only（全词匹配）
+Skip Inactive Code（跳过非活动代码）
+Skip Comments（跳过注释）
+Search Only Comments（仅搜索注释）
+Smart Reference Matching（智能引用匹配）
+Touch files and cause recompile（修改文件并触发重新编译）
+~~~
+>>>>>>> Stashed changes
 
 ![](./SourceInsight.assets/Files.png)
 
